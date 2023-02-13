@@ -1,4 +1,5 @@
 import { useState , useEffect} from 'react'
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [scrolledForNav, setScrolledForNav] = useState(false);
@@ -69,7 +70,7 @@ const Nav = () => {
     </div>
 
     <ul className='flex gap-6'>
-
+{/* 
         <li>
         <a className='flex  items-center ' href="/">
            <h4 className='mr-2'>
@@ -79,12 +80,12 @@ const Nav = () => {
             </a>
         </li>
         <li>
-        <a className='flex  items-center ' href="/">
+        <Link className='flex  items-center ' to="/">
            <h4 className='mr-2'>
-            About Us
+            Home
            </h4>
       <i class="fa-solid fa-angle-down"></i>
-            </a>
+            </Link>
         </li>
         <li>
         <a className='flex  items-center ' href="/">
@@ -111,9 +112,29 @@ const Nav = () => {
       <i class="fa-solid fa-angle-down"></i>
             </a>
         </li>
-  
+   */}
         
-
+        <li>
+        <Link className='flex  items-center ' to="/">
+           <h4 className='mr-2'>
+            Home
+           </h4>
+            </Link>
+        </li>
+        <li>
+        <Link className='flex  items-center ' to="/events">
+           <h4 className='mr-2'>
+            Events
+           </h4>
+            </Link>
+        </li>
+        <li>
+        <Link className='flex  items-center ' to="/">
+           <h4 className='mr-2'>
+            About Us
+           </h4>
+            </Link>
+        </li>
     </ul>
 
         
